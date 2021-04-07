@@ -5,63 +5,72 @@
 }
 
 /*elementos base*/
-body{
+body {
    background-color: black;
    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    color:white;
 }
 
-header .container{
+header .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
-header .logo{
+header .logo {
     margin-left: 5px;
     color: rgb(229, 9, 20);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 40px;
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
     color:gray;
     margin-right: 10px;
 }
 
-
-header nav a:hover{
+header nav a:hover {
     color:#fff;
 }
 
+a:visited {
+    color: white;
+}
+
 /*filme principal*/
-.filme-principal{
+.filme-principal {
     font-size: 16px;
     background-color: gray;
     height: 400px;
     background-size: cover;
 
+    transition: .8s ease all;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
 
-.filme-principal .descricao{
-    margin-top: 10px;
-    margin-bottom: 40px;
+.filme-principal:hover {
+    transition: .8s ease all;
 }
 
-.filme-principal .titulo{
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-shadow: 0.2em 0.2em 0.2em black;
+}
+
+.filme-principal .titulo {
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em black;
 }
 
-.botao{
+.botao {
     background-color: rgba(0,0,0,.50);
     border: none;
     color: white;
@@ -74,51 +83,51 @@ header nav a:hover{
     transition: .3s ease all;
 }
 
-.botao:hover{
+.botao:hover {
     background-color: white;
     color: black;
 }
 
-.botao i{
+.botao i {
     margin-right: 8px;
 }
 
-.container{
+.container {
     margin-left: 20px;
 }
 
-.filme-principal .container{
+.filme-principal .container {
     width: 70%;
 }
 
-.box-filme{
+.box-filme {
     height: 100%;
     width: 100%;
     display: block;
     cursor: pointer;
 }
 
-.carrosel-filmes{
+.carrosel-filmes {
     margin-top: 5px;
 }
 
 
 /* responsive */
-@media screen and (max-width:700px){
+@media screen and (max-width:700px) {
     header .container{
     display: flex;
     flex-direction: column;
     }
 
-    .botao{
+    .botao {
         margin-top: 5px;
         width: 300px;
     }
 
 }
 
-@media screen and (min-width:1000px){
-    .descricao{
+@media screen and (min-width:1000px) {
+    .descricao {
         width: 50%;
     }
 }
