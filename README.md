@@ -4,4 +4,4 @@
  
   - Instagram: https://yudiaguena.github.io/web-dev/fake-instagram
   - Netflix: https://yudiaguena.github.io/web-dev/fakeflix/
-  
+  - Snake Game: https://github.com/yudiaguena/web-dev/tree/main/snake%20game
